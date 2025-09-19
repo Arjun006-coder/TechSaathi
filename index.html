@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Saathi - Your Tech Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('77e6520ab721d1a2d7e5877628c054fa.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      color: #333;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(255, 255, 255, 0.68);
+      z-index: -1;
+    }
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    .language-toggle {
+      background-color: white;
+      color: #4a90e2;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    main {
+      padding: 2rem;
+    }
+    .intro {
+      margin-bottom: 2rem;
+    }
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .guide-card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .guide-card:hover {
+      transform: translateY(-5px);
+    }
+    .guide-card h3 {
+      margin: 0.5rem 0;
+    }
+    .guide-card a {
+      text-decoration: none;
+      color: #4a90e2;
+      font-weight: bold;
+    }
+    .guide-card img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tech Saathi</h1>
+    <button class="language-toggle" onclick="toggleLanguage()">हिंदी / English</button>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome to Your Local Tech Guide</h2>
+      <p>This website helps you understand and use essential digital services like UPI payments, online train ticket booking, accessing government schemes, WhatsApp features, online doctor consultations, and ordering medicines — all in simple steps, with screenshots and videos. Choose your guide below:</p>
+    </section>
+
+    <section class="guide-grid">
+      <div class="guide-card">
+        <img src="assets\et-explainer-behind-upi-first-digital-payment-apps-latest-plan-to-revamp-their-mobile-wallet-operations.webp" alt="UPI Apps Guide">
+        <h3>Using UPI Apps</h3>
+        <a href="guides/guide1-upi-en.html">View Guide</a>
+      </div>
+      <div class="guide-card">
+        <img src="assets\s3q7ot9g_irctc-down-today_625x300_31_December_24.webp" alt="Train Ticket Booking">
+        <h3>Booking Train Tickets</h3>
+        <a href="guides/guide2-irctc-en.html">View Guide</a>
+      </div>
+      <div class="guide-card">
+        <img src="assets\govt-schemes.avif" alt="Government Schemes">
+        <h3>Knowing Government Schemes</h3>
+        <a href="guides/guide3-govtschemes-en.html">View Guide</a>
+      </div>
+      <div class="guide-card">
+        <img src="assets\EU-WHATSAPP-PRIVACY-0_1733638160387_1733638176511.jpg" alt="WhatsApp Features">
+        <h3>WhatsApp Features</h3>
+        <a href="guides/guide4-whatsapp-en.html">View Guide</a>
+      </div>
+      <div class="guide-card">
+        <img src="assets\Online-Doctor-Consultation-1024x683.jpg" alt="Online Doctor Consultation">
+        <h3>Doctor Consultation Online</h3>
+        <a href="guides/guide5-doctor-en.html">View Guide</a>
+      </div>
+      <div class="guide-card">
+        <img src="assets\medicine-online.jpg" alt="Medicine Ordering">
+        <h3>Ordering Medicines Online</h3>
+        <a href="guides/guide6-medicine-en.html">View Guide</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const currentUrl = window.location.href;
+      if (currentUrl.includes('index.html') || currentUrl.endsWith('/')) {
+        window.location.href = 'homepage-hi.html';
+      } else if (currentUrl.includes("-en")) {
+        window.location.href = currentUrl.replace("-en", "-hi");
+      } else if (currentUrl.includes("-hi")) {
+        window.location.href = currentUrl.replace("-hi", "-en");
+      } else {
+        // fallback: stay on homepage
+        alert("Language toggle works on guide pages.");
+      }
+      
+    }
+  </script>
+</body>
+</html>

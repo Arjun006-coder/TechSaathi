@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guide 5 - Online Doctor Consultations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    ol, ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+    img {
+      max-width: 100%;
+      margin-top: 10px;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    video {
+      width: 100%;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+    .top-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+    .top-buttons button {
+      padding: 8px 14px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .home-btn {
+      background-color: #e0e0e0;
+      color: #333;
+    }
+    .lang-btn {
+      background-color: #4a90e2;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>How to Do Online Doctor Consultations</h1>
+</header>
+
+<div class="top-buttons">
+  <button class="home-btn" onclick="window.location.href='../../homepage-en.html'">⬅ Back to Homepage</button>
+  <button class="lang-btn" onclick="toggleLanguage()">English / हिंदी</button>
+</div>
+
+<main>
+
+  <section>
+    <h2>Purpose</h2>
+    <p>This guide helps senior citizens, homemakers, and remote-area patients to consult doctors online from home using safe, verified platforms.</p>
+  </section>
+
+  <section>
+    <h2>Option A: Free Government Platform – eSanjeevani</h2>
+    <ol>
+      <li>
+        <strong>Open Website or App</strong><br>
+        Go to <a href="https://esanjeevani.in" target="_blank">https://esanjeevani.in</a><br>
+        Or install “eSanjeevani OPD” from the Play Store.<br>
+        <img src="../assets\doc1.png" alt="eSanjeevani homepage or app install">
+      </li>
+      <li>
+        <strong>Click “Patient Registration and register with phone no. and otp after that”</strong><br>
+        Fill in your:
+        <ul>
+          <li>Name</li>
+          <li>Mobile number (OTP-based login)</li>
+          <li>State</li>
+          <li>Age, Gender</li>
+          <li>Address</li>
+        </ul>
+        <img src="../assets\doc3.png" alt="eSanjeevani registration form">
+        <img src="../assets\doc4.png" alt="eSanjeevani registration form">
+      </li>
+      <li>
+        <strong>After registeration click on consult now and fill in you problem details</strong>
+        <img src="../assets\doc5.png" alt="eSanjeevani registration form">
+        <img src="../assets\doc6.png" alt="eSanjeevani registration form">
+      </li>
+      <li>
+        <strong>Get Your Token Number</strong><br>
+        After registering, you’ll get a token number and estimated wait time.<br>
+      </li>
+      <li>
+        <strong>Join the Video Call</strong><br>
+        When it’s your turn, click “Join Now”. Allow camera/mic permissions.<br>
+      </li>
+      <li>
+        <strong>Download Your Prescription</strong><br>
+        After consultation, download/view the digital prescription.<br>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Option B: Private Platform – Practo (Paid)</h2>
+    <ol>
+      <li>
+        <strong>Install Practo App or Visit Website</strong><br>
+        Go to <a href="https://www.practo.com" target="_blank">https://www.practo.com</a><br>
+        Or install from the Play Store.<br>
+      </li>
+      <li>
+        <strong>Log In / Sign Up</strong><br>
+        Use your phone number or email to log in or register.<br>
+      </li>
+      <li>
+        <strong>Search a Doctor</strong><br>
+        Tap the “Consult” tab and choose a specialty: General, Skin, Women’s Health etc.<br>
+        View:
+        <ul>
+          <li>Doctor ratings</li>
+          <li>Consultation fees (₹199–₹499)</li>
+          <li>Estimated response time</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Start the Consultation</strong><br>
+        Tap “Start Consult”.<br>
+        Enter symptoms, upload images, and chat or call with the doctor.<br>
+      </li>
+      <li>
+        <strong>Pay the Fees</strong><br>
+        Use UPI, card, or wallet options.<br>
+      </li>
+      <li>
+        <strong>Receive Your Prescription</strong><br>
+        A digital prescription will appear in your chat.<br>
+        Save it or order medicines via Practo.<br>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>📹 Tutorial Video</h2>
+    <p>Watch this video to learn how to consult a doctor online step-by-step:</p>
+    <video controls>
+      <source src="assets/videos/doctor-guide.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+</main>
+
+<script>
+  function toggleLanguage() {
+    const currentUrl = window.location.href;
+    if (currentUrl.includes('-en')) {
+      window.location.href = currentUrl.replace('-en', '-hi');
+    } else if (currentUrl.includes('-hi')) {
+      window.location.href = currentUrl.replace('-hi', '-en');
+    } else {
+      alert('Language toggle not supported on this page.');
+    }
+  }
+</script>
+
+</body>
+</html>

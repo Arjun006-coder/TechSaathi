@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guide 6 - How to Order Medicines Online</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+    }
+    ol, ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+    img {
+      max-width: 100%;
+      margin-top: 10px;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    video {
+      width: 100%;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+    .top-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+    .top-buttons button {
+      padding: 8px 14px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .home-btn {
+      background-color: #e0e0e0;
+      color: #333;
+    }
+    .lang-btn {
+      background-color: #4a90e2;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>How to Order Medicines Online Using 1mg</h1>
+  </header>
+
+  <div class="top-buttons">
+    <button class="home-btn" onclick="window.location.href='../../homepage-en.html'">⬅ Back to Homepage</button>
+    <button class="lang-btn" onclick="toggleLanguage()">English / हिंदी</button>
+  </div>
+
+  <main>
+
+    <section>
+      <h2>Purpose</h2>
+      <p>This guide helps you understand how to order medicines online, especially useful for senior citizens, patients with chronic illness, or people who can’t visit pharmacies easily.</p>
+    </section>
+
+    <section>
+      <h2>What You Need</h2>
+      <ul>
+        <li>Smartphone with Internet access</li>
+        <li>Mobile number (for login & OTP)</li>
+        <li>A valid prescription (PDF, image, or paper copy)</li>
+        <li>Digital payment method (UPI, card, wallet)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Other Apps Available</h2>
+      <p>Several apps offer online medicine delivery services. Most of them follow similar steps:</p>
+      <ul>
+        <li><strong>1mg (now Tata 1mg)</strong> – Full pharmacy, lab tests, doctor consults</li>
+        <li><strong>PharmEasy</strong> – Medicine delivery + diagnostics</li>
+        <li><strong>NetMeds</strong> – Upload prescription & get home delivery</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Steps to Order Medicines (Using 1mg as Example)</h2>
+      <ol>
+        <li>
+          <strong>Install & Open 1mg App</strong><br>
+          Download from Play Store or App Store, or visit <a href="https://www.1mg.com" target="_blank">1mg.com</a>.<br>
+          <img src="../assets\med1.jpeg" alt="Install or open 1mg app">
+        </li>
+        <li>
+          <strong>Login or Sign Up</strong><br>
+          Enter your phone number → Verify with OTP.<br>
+          <img src="../assets\med2.jpeg" alt="Login screen with OTP">
+        </li>
+        <li>
+          <strong>Search medicine in serch bar or “Order with Prescription”</strong><br>
+          Choose to search medicines manually or upload prescription.<br>
+          <img src="../assets\med3.jpeg" alt="Medicine home page">
+        </li>
+        <li>
+          <strong>Upload Prescription (if required)</strong><br>
+          Click “Upload Prescription” → Choose from gallery or take a photo.<br>
+          
+        </li>
+        <li>
+          <strong>Enter Delivery Address</strong><br>
+          Add your address with PIN code and contact info.<br>
+          
+        </li>
+        <li>
+          <strong>Select Payment Method</strong><br>
+          Choose UPI, debit/credit card, or wallet.<br>
+          
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>📹 Tutorial Video</h2>
+      <p>Watch this video to learn how to order medicines step-by-step:</p>
+      <video controls>
+        <source src="assets/videos/medicine-guide.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const currentUrl = window.location.href;
+      if (currentUrl.includes('-en')) {
+        window.location.href = currentUrl.replace('-en', '-hi');
+      } else if (currentUrl.includes('-hi')) {
+        window.location.href = currentUrl.replace('-hi', '-en');
+      } else {
+        alert('Language toggle not supported on this page.');
+      }
+    }
+  </script>
+
+</body>
+</html>

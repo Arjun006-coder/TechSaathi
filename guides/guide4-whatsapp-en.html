@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guide 4 - WhatsApp Features</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    ol {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    img {
+      max-width: 100%;
+      margin-top: 0.5rem;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    video {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .top-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .top-buttons button {
+      padding: 8px 14px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .home-btn {
+      background-color: #e0e0e0;
+      color: #333;
+    }
+
+    .lang-btn {
+      background-color: #4a90e2;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>How to Use WhatsApp Features</h1>
+  </header>
+
+  <div class="top-buttons">
+    <button class="home-btn" onclick="window.location.href='../../homepage-en.html'">⬅ Back to Homepage</button>
+    <button class="lang-btn" onclick="toggleLanguage()">हिंदी / English</button>
+  </div>
+
+  <main>
+    <section>
+      <h2>Purpose</h2>
+      <p>This guide helps people use WhatsApp more effectively for sharing documents, location, and using basic features confidently.</p>
+    </section>
+
+    <section>
+      <h2>A. How to Share a Document (PDF, Aadhaar, Photos, etc.)</h2>
+      <ol>
+        <li>
+          <strong>Open the WhatsApp Chat:</strong><br>
+          Open the WhatsApp app. Tap on the contact or group you want to send to.
+          
+        </li>
+        <li>
+          <strong>Tap the Attachment Icon (📎):</strong><br>
+          At the bottom near the message box, tap the paperclip icon.
+          
+        </li>
+        <li>
+          <strong>Choose \"Document\":</strong><br>
+          Tap on \"Document\" → It will show PDF, Word files, etc. You can also tap \"Browse other docs…\".
+          
+        </li>
+        <li>
+          <img src="../assets\wp1.webp" alt="Step 3 - Choose Document">
+        </li>
+        <li>
+          <strong>Select File and Send:</strong><br>
+          Tap the file → Tap Send.
+          
+        </li>
+        <li>
+          <img src="../assets/wp2.webp" alt="Step 4 - Send Document">
+        </li>
+        <li>
+          
+          <img src="../assets/wp3.webp" alt="Step 4 - Send Document">
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>B. How to Share Your Location</h2>
+      <ol>
+        <li>
+          <strong>Open the Chat:</strong><br>
+          Select the contact/group where you want to send your location.
+        </li>
+        <li>
+          <strong>Tap on 📎 Attachment → Location:</strong><br>
+          Tap on the paperclip icon and then choose \"Location\".
+          <img src="../assets/wp4.jpg" alt="Step 6 - Choose Location Option">
+        </li>
+        <li>
+          <strong>Allow Location Access:</strong><br>
+          If it asks permission, tap \"Allow\" to let WhatsApp access your location.
+        </li>
+        <li>
+          <strong>Choose Type:</strong><br>
+          Tap on \"Send Your Current Location\" or choose a nearby place.
+          <img src="../assets\wp5.jpg" alt="Step 8 - Choose Location to Share">
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>📹 Tutorial Video (Full Steps)</h2>
+      <p>Prefer watching? Here's a video walkthrough of all the steps explained above:</p>
+      <video controls>
+        <source src="assets/videos/whatsapp-guide.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const currentUrl = window.location.href;
+      if (currentUrl.includes('-en')) {
+        window.location.href = currentUrl.replace('-en', '-hi');
+      } else if (currentUrl.includes('-hi')) {
+        window.location.href = currentUrl.replace('-hi', '-en');
+      } else {
+        alert('Language toggle not supported on this page.');
+      }
+    }
+  </script>
+
+</body>
+</html>

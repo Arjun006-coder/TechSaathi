@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>गाइड 3 - सरकारी योजनाओं की जानकारी</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    ol, ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+    img {
+      max-width: 100%;
+      margin-top: 10px;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    video {
+      width: 100%;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+    .top-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+    .top-buttons button {
+      padding: 8px 14px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .home-btn {
+      background-color: #e0e0e0;
+      color: #333;
+    }
+    .lang-btn {
+      background-color: #4a90e2;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>सरकारी योजनाओं की जानकारी और आवेदन कैसे करें</h1>
+  </header>
+
+  <div class="top-buttons">
+    <button class="home-btn" onclick="window.location.href='../../homepage-hi.html'">⬅ होमपेज पर जाएं</button>
+    <button class="lang-btn" onclick="toggleLanguage()">English / हिंदी</button>
+  </div>
+
+  <main>
+
+    <section>
+      <h2>उद्देश्य</h2>
+      <p>यह गाइड नागरिकों को भारत सरकार की नई योजनाओं की जानकारी, पात्रता, और आवेदन की प्रक्रिया समझाने के लिए है।</p>
+    </section>
+
+    <section>
+      <h2>1. आधिकारिक योजना पोर्टल पर जाएं</h2>
+      <ol>
+        <li>Google Chrome जैसे ब्राउज़र में <a href="https://www.india.gov.in/my-government/schemes" target="_blank">https://www.india.gov.in/my-government/schemes</a> खोलें।</li>
+        <li>"Search Schemes" बॉक्स दिखेगा, उसमें अपनी रुचि अनुसार कीवर्ड टाइप करें जैसे:
+          <ul>
+            <li>farmer</li>
+            <li>student</li>
+            <li>pension</li>
+            <li>scholarship</li>
+            <li>insurance</li>
+          </ul>
+        </li>
+        <img src="../assets\guide3-1.png" alt="Search schemes page on India.gov.in">
+        <li>🔍 Search बटन पर क्लिक करें।</li>
+        <li>नीचे योजनाओं की सूची आएगी। हर योजना पर क्लिक करके:
+          <ul>
+            <li>फायदे देखें</li>
+            <li>पात्रता पढ़ें</li>
+            <li>आवेदन की प्रक्रिया जानें</li>
+          </ul>
+          <img src="../assets\guide3-2.PNG" alt="List of matching government schemes">
+        </li>
+        <li>दाईं तरफ “Most Viewed” और “What’s New” भी उपयोग करें।
+          <img src="../assets\guide3-3.png" alt="Most viewed and new schemes">
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>2. UMANG ऐप से केंद्र सरकार की योजनाएं देखें</h2>
+      <ol>
+        <li>Play Store या App Store खोलें और "UMANG" खोजें।</li>
+        <li>UMANG ऐप इंस्टॉल करें।
+          <img src="../assets\guide3-4.jpeg" alt="Install UMANG app">
+        </li>
+        <li>ऐप खोलें, भाषा चुनें और लॉगिन करें या गेस्ट मोड में जाएं।</li>
+        <li>“Schemes” पर टैप करें या ऊपर सर्च बार में योजना का नाम डालें:
+          <ul>
+            <li>PM-Kisan</li>
+            <li>Ayushman Bharat</li>
+            <li>eShram Card</li>
+          </ul>
+        </li>
+        <img src="../assets\guide3-6.jpeg" alt="Schemes">
+        <li>योजना पर क्लिक करके:
+          <ul>
+            <li>विवरण पढ़ें</li>
+            <li>पात्रता जांचें</li>
+            <li>अगर उपलब्ध हो तो ऐप से आवेदन करें</li>
+          </ul>
+          
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>3. राज्य सरकार की योजनाएं खोजें</h2>
+      <ol>
+        <li>Google में टाइप करें: <strong>“[राज्य का नाम] government schemes site”</strong></li>
+        <li>उदाहरण:
+          <ul>
+            <li>Delhi government schemes portal</li>
+            <li>Maharashtra yojana site</li>
+          </ul>
+        </li>
+        <li>.gov.in पर खत्म होने वाली वेबसाइट ही खोलें।</li>
+        <li>राज्य पोर्टल पर:
+          <ul>
+            <li>कृषि और किसान योजनाएं</li>
+            <li>छात्रवृत्ति</li>
+            <li>राशन कार्ड अपडेट</li>
+            <li>रोज़गार या आवास सहायता</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>सुझाव</h2>
+      <ul>
+        <li>आधार, मोबाइल और बैंक लिंक रखें।</li>
+        <li>ऑनलाइन आवेदन करते समय आवेदन ID सेव करें।</li>
+        <li>नजदीकी CSC (Common Service Centre) जाकर मदद लें।</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📹 ट्यूटोरियल वीडियो</h2>
+      <p>नीचे वीडियो में आप देख सकते हैं कि सरकारी योजनाओं को कैसे सर्च करें और आवेदन करें:</p>
+      <video controls>
+        <source src="assets/videos/govtschemes-guide.mp4" type="video/mp4">
+        आपका ब्राउज़र वीडियो सपोर्ट नहीं करता।
+      </video>
+    </section>
+
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const currentUrl = window.location.href;
+      if (currentUrl.includes('-hi')) {
+        window.location.href = currentUrl.replace('-hi', '-en');
+      } else if (currentUrl.includes('-en')) {
+        window.location.href = currentUrl.replace('-en', '-hi');
+      } else {
+        alert('भाषा बदलने का विकल्प इस पेज पर उपलब्ध नहीं है।');
+      }
+    }
+  </script>
+
+</body>
+</html>

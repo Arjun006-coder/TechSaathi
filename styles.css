@@ -1,0 +1,103 @@
+/* Reset and base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('assets/images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  color: #333;
+}
+
+/* Translucent overlay on background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: -1;
+}
+
+/* Header bar */
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Language toggle button */
+.language-toggle {
+  background-color: white;
+  color: #4a90e2;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Main content area */
+main {
+  padding: 2rem;
+}
+
+/* Intro section */
+.intro {
+  margin-bottom: 2rem;
+}
+
+.intro h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Grid layout for guides */
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Individual guide cards */
+.guide-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.guide-card:hover {
+  transform: translateY(-5px);
+}
+
+.guide-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.guide-card a {
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.guide-card img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
